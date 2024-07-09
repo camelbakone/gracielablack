@@ -1,0 +1,121 @@
+
+body,
+.block-image-mobile {
+    backdrop-filter: none !important;
+}
+
+@media (max-width: 440px) {
+    .wrapper .block-image-mobile {
+        opacity: .7
+    }
+}
+
+#webmaster_disclaimer_overlay svg {
+    display: inline;
+    width: 100px;
+    height: 100px;
+}
+
+#webmaster_disclaimer_overlay .lp_overlay_outer {
+    z-index: 1000001;
+    display: block;
+}
+
+#webmaster_disclaimer_overlay .lp_overlay {
+    text-align: center;
+    max-width: 96%;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    box-sizing: border-box;
+    border-radius: 16px;
+    border-color: #888888;
+    background: #000000;
+    font-family: "Open Sans", Arial, sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
+    font-weight: 300;
+    font-size: 13px;
+    line-height: 1.2;
+}
+
+#webmaster_disclaimer_overlay .buttons {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#webmaster_disclaimer_overlay button {
+    display: inline-block;
+    padding: 12px 16px;
+    font-weight: 600;
+    border: 1px solid #000000;
+    border-radius: 8px;
+    margin: 8px 0;
+    cursor: hand;
+    cursor: pointer;
+    font-size: inherit;
+    flex: 0 0 45%;
+}
+
+#webmaster_disclaimer_overlay button#yes {
+    background-color: #02db02;
+    border-color: #02db02
+}
+
+#webmaster_disclaimer_overlay button#no {
+    background-color: #000000;
+    border-color: #888888;
+    color: #ffffff;
+}
+
+#webmaster_disclaimer_overlay h2 {
+    margin: 0;
+    font-size: 26px;
+    font-weight: 700;
+}
+
+#webmaster_disclaimer_overlay small {
+    font-size: 9px;
+    line-height: 11px;
+}
+
+@media (min-width: 420px) {
+    #webmaster_disclaimer_overlay .lp_overlay {
+        max-width: 400px
+    }
+
+    #webmaster_disclaimer_overlay button {
+        padding: 16px
+    }
+
+    #webmaster_disclaimer_overlay h2 {
+        font-size: 36px;
+    }
+}
+
+@media (min-width: 768px) and (min-height: 768px) {
+    #webmaster_disclaimer_overlay .lp_overlay {
+        font-size: 25px;
+        max-width: 700px
+    }
+
+    #webmaster_disclaimer_overlay h2 {
+        font-size: 50px
+    }
+
+    #webmaster_disclaimer_overlay small {
+        font-size: 22px
+    }
+}
+
+#webmaster_disclaimer_overlay .lp_overlay_background {
+    opacity: 1;
+}
+
+@supports (backdrop-filter: blur(32px)) {
+    #webmaster_disclaimer_overlay .lp_overlay_background {
+        background-color: transparent;
+        backdrop-filter: blur(11px);
+    }
+}
